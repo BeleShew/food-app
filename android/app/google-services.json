@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "619162585284",
+    "firebase_url": "https://best-food-3e6ee-default-rtdb.firebaseio.com",
+    "project_id": "best-food-3e6ee",
+    "storage_bucket": "best-food-3e6ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619162585284:android:d363204a84f10e5a1fe191",
+        "android_client_info": {
+          "package_name": "com.example.bestfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619162585284-nna7bl2hg6a075h8kvj8ehl3e6kl5r4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZDCkTxaK7AhgSieC3gAWQ3Uo0IrjvwhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619162585284-nna7bl2hg6a075h8kvj8ehl3e6kl5r4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

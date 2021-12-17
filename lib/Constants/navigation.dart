@@ -4,7 +4,10 @@ class CustomPageNavigationAnimation {
   final AxisDirection direction;
   final Widget child;
   final BuildContext context;
-  CustomPageNavigationAnimation({required this.context, required this.direction, required this.child});
+  CustomPageNavigationAnimation(
+      {required this.context,
+      required this.direction,
+      required this.child});
   void pushPageAsync() {
     Navigator.push(
       context,
@@ -17,7 +20,7 @@ class CustomPageNavigationAnimation {
             return SlideTransition(
               position: Tween<Offset>(begin: getBeginOffset(), end: Offset.zero)
                   .animate(animation),
-              child:  child,
+              child: child,
             );
           }),
     );
@@ -27,23 +30,25 @@ class CustomPageNavigationAnimation {
     switch (direction) {
       case AxisDirection.up:
         return const Offset(0, 1);
-    //break;
+      //break;
       case AxisDirection.down:
         return const Offset(0, -1);
-    //break;
+      //break;
       case AxisDirection.right:
         return const Offset(-1, 0);
-    //break;
+      //break;
       case AxisDirection.left:
         return const Offset(1, 0);
-    //break;
+      //break;
       default:
         return const Offset(1, 0);
     }
   }
+
   void popPageAsync() {
     Navigator.pop(context);
   }
+
   void pushReplacement() {
     // Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_)=>child));
 
@@ -62,7 +67,21 @@ class CustomPageNavigationAnimation {
           }),
     );
   }
-void heroAnimation(){
 
-}
+  void heroAnimation() {
+    Navigator.of(context).push(
+      PageRouteBuilder(
+          fullscreenDialog: true,
+          transitionDuration: const Duration(milliseconds: 300),
+          reverseTransitionDuration: const Duration(milliseconds: 300),
+          pageBuilder: (context, animation, secondaryAnimation) => child,
+          transitionsBuilder: (context, animation, animationTime, child) {
+            return ScaleTransition(
+              alignment: Alignment.bottomRight,
+              scale: animation,
+              child: child,
+            );
+          }),
+    );
+  }
 }

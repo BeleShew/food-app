@@ -7,9 +7,10 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp();
   runApp(const MyApp());
    Get.put(LoadingController());
-  Firebase.initializeApp();
 }
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);

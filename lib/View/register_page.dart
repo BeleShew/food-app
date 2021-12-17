@@ -92,28 +92,25 @@ class RegisterPage extends StatelessWidget {
                   //     ),
                   //   ),
                   // ],),
-                  Hero(
-                    tag: Constants.registrationTag,
-                    child: Container(
-                      padding: const EdgeInsets.all(10),
-                      child: TextFormField(
-                        controller: formController.nameController,
-                        onSaved: (values) {
-                          formController.name = values!;
-                        },
-                        validator: (values) {
-                          return formController.validateName(values!);
-                        },
-                        decoration: const InputDecoration(
-                          border: InputBorder.none,
-                          labelText: "Restaurant Name",
-                          focusedBorder: InputBorder.none,
-                          hintText: "Restaurant Name",
-                          focusColor: Colors.black,
-                          labelStyle: TextStyle(
-                            color: Colors.black,
-                            fontSize: 13,
-                          ),
+                  Container(
+                    padding: const EdgeInsets.all(10),
+                    child: TextFormField(
+                      controller: formController.nameController,
+                      onSaved: (values) {
+                        formController.name = values!;
+                      },
+                      validator: (values) {
+                        return formController.validateName(values!);
+                      },
+                      decoration: const InputDecoration(
+                        border: InputBorder.none,
+                        labelText: "Restaurant Name",
+                        focusedBorder: InputBorder.none,
+                        hintText: "Restaurant Name",
+                        focusColor: Colors.black,
+                        labelStyle: TextStyle(
+                          color: Colors.black,
+                          fontSize: 13,
                         ),
                       ),
                     ),

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "619162585284-b0dhfpke300127e5u8c8rne0ihkuocfr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bestfood",
+            "certificate_hash": "ab5d430bc90d5cd59b0640173b65a4d873c6dcde"
+          }
+        },
+        {
           "client_id": "619162585284-nna7bl2hg6a075h8kvj8ehl3e6kl5r4r.apps.googleusercontent.com",
           "client_type": 3
         }

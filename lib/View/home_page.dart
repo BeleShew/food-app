@@ -1,6 +1,5 @@
 import 'package:bestfood/Controller/bottom_nav_bar.dart';
 import 'package:bestfood/View/prepare_home_page.dart';
-import 'package:bestfood/View/register_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -25,6 +24,7 @@ class HomePage extends StatelessWidget {
             unselectedItemColor: Colors.grey[400],
             selectedFontSize: 16,
             unselectedFontSize: 14,
+            type: BottomNavigationBarType.shifting,
             onTap: (int index){
               //provider.currentIndexChanged(index);
               bottomNavController.currentIndexChanged(index);
